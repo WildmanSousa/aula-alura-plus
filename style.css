@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-principal: #ffffff;
+  --cor-secundaria: #c0c0c0;
+  --cor-de-fundo: #00030c;
+  --cor-botao: #167bf7;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-principal);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.principal {
+  background-image: url(assents/Background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+  background-color: var(--cor-botao);
+  border-radius: 5px;
+  padding: 1em;
+  display: block;
+  margin-bottom: 1em;
+  text-decoration: none;
+  color: var(--cor-principal);
+}
+
+.botao__secundario {
+  background-color: transparent;
+  border: 2px solid var(--cor-principal);
+  color: var(--cor-secundaria);
+}
+
+.container__aviso {
+  color: var(--cor-secundaria);
+  font-size: 12px;
+}
+
+.container__titulo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.container__imagem {
+  margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+  margin: 0 6em;
+}
+
+.secundario {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.secundario__imagem {
+  width: 80%;
+}
+
+.titulo__descricao {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--cor-principal);
+  margin-bottom: 0.1em;
+}
+
+.texto__descricao {
+  font-size: 16px;
+  color: var(--cor-secundaria);
+}
+
+.secundario__botao {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.container__descricao {
+  padding: 2em;
+}
+
+.not__imagem {
+  width: 85%;
+}
+
+.dispositivos {
+  text-align: center;
+}
+
+.dispositivos__lista {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 5em 0em;
+}
+
+.dispositivos__titulo {
+  font-size: 48px;
+  color: var(--cor-principal);
+}
+
+.lista__item {
+  font-size: 32px;
+  color: var(--cor-principal);
+}
+
+.rodape {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.rodape__logo {
+  margin-bottom: 2em;
+}
+.rodape__lista {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 2em;
+  gap: 10px;
+}
+
+.rodape__texto {
+  text-align: center;
+  color: var(--cor-secundaria);
+  margin-bottom: 2em;
+  width: 88%;
+}
+
+.container__botao:hover {
+  background-color: dimgrey;
+}
+
+.lista__link a:hover {
+  color: grey;
+}
+
+.lista__link a:active {
+  color: blueviolet;
+}
